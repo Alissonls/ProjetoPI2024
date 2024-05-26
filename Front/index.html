@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dark-mode-switch">
+        <label class="switch">
+            <input type="checkbox" id="toggleDarkMode">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="container">
+        <img src="canto.png" class="img" atl="Logo cantinho da bike"/>
+        <h1>Controle de Estoque</h1>
+        <div class="actions">
+            <button id="addItemBtn">Cadastrar Item</button>
+            <button id="viewItemsBtn">Consultar Estoque</button>
+        </div>
+        <form id="itemForm">
+            <input type="text" id="itemName" placeholder="Nome do item" required>
+            <input type="number" id="itemQuantity" placeholder="Quantidade" required>
+            <button type="submit">Adicionar Item</button>
+        </form>
+        <form id="searchForm">
+            <input type="text" id="searchQuery" placeholder="Nome do item para consulta">
+            <button type="submit">Consultar</button>
+        </form>
+        <table id="inventoryTable">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Data de Entrada</th>
+                    <th>Data de Saída</th>
+                    <th>Controle de Pedidos</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
